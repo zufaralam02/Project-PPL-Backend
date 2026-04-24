@@ -34,9 +34,10 @@ class DraftQuotationController extends Controller
     {
         $validated = $request->validate([
             'customer_id' => 'required|exists:customer,id',
-            'available_id' => 'nullable|integer',
+            'aircraft_available_id' => 'required|integer',
             'flight_type' => 'required|in:oneway,roundtrip',
-            'flight_schedule' => 'required|date',
+            'departure_date' => 'required|date',
+            'return_date' => 'date',
             'flight_route' => 'required|string',
             'pax' => 'required|integer|min:1',
         ]);
@@ -93,9 +94,10 @@ class DraftQuotationController extends Controller
 
         $validated = $request->validate([
             'customer_id' => 'required|exists:customer,id',
-            'available_id' => 'nullable|integer',
+            'aircraft_available_id' => 'required|integer',
             'flight_type' => 'required|in:oneway,roundtrip',
-            'flight_schedule' => 'required|date',
+            'departure_date' => 'required|date',
+            'return_date' => 'date',
             'flight_route' => 'required|string',
             'pax' => 'required|integer|min:1',
         ]);

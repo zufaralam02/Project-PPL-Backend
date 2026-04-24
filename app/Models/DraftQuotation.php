@@ -15,9 +15,10 @@ class DraftQuotation extends Model
         'user_id',
         'customer_id',
         'integrate_id',
-        'available_id',
+        'aircraft_available_id',
         'flight_type',
-        'flight_schedule',
+        'departure_date',
+        'return_date',
         'flight_route',
         'pax',
     ];
