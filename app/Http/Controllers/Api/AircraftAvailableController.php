@@ -14,7 +14,8 @@ class AircraftAvailableController extends Controller
             'id',
             'aircraft_id',
             'available_start',
-            'available_end'
+            'available_end',
+            'is_booked'
         )
             ->with([
                 'aircraft:id,name'

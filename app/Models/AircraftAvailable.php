@@ -12,6 +12,7 @@ class AircraftAvailable extends Model
         'aircraft_id',
         'available_start',
         'available_end',
+        'is_booked'
     ];
 
     public $timestamps = true;
