@@ -45,3 +45,7 @@ Route::middleware('auth:sanctum')->group(function () {
     // DRAFT QUOTATION
     Route::apiResource('draft-quotation', DraftQuotationController::class);
 });
+
+Route::get('/test', function () {
+    return 'OK';
+});
